@@ -1,0 +1,22 @@
+@media (min-width: 320px) and (max-width: 800px){
+    .header_navDesktop{
+        display: none !important;
+    }
+
+    .header_navMobile{ display: flex !important;}
+
+    body{background-color: red;}
+
+    
+}
+
+@media (min-width: 801px) and (max-width: 1024px){
+    .header_navDesktop{
+        display: flex;
+    }
+
+    .header_navMobile{ display: none ;}
+
+    body{background-color: blue;}
+
+}

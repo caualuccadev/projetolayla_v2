@@ -1,0 +1,17 @@
+--pink400: #FEE6F4;
+--pink500: #D94F4F;
+--pink600: #D12C2C;
+
+--gapSections: 190px;
+
+--mainFont: "MontSerrat", "Arial", sans-serif;
+--secondFont: "Caveat", sans-serif;
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');

@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --pink400: #FEE6F4;
+    --pink500: #D94F4F;
+    --pink600: #D12C2C;
+
+    --gapSections: 190px;
+
+    --mainFont: "MontSerrat", "Arial", sans-serif;
+    --secondFont: "Caveat", sans-serif;
+}
+
+
+/* default configurations */
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+html{ scroll-behavior: smooth;}
+
+body{
+   display: flex; flex-direction: column;
+   align-items: start; justify-content: center;
+   gap: var(--gapSections);
+   margin: 1rem; padding: 1rem;
+   overflow-x: hidden; 
+   font-family: var(--mainFont);
+}
+.mainContent{
+    display: flex; flex-direction: column;
+    gap: var(--gapSections);
+}
+
+a{ text-decoration: none; }
+
+ul{list-style: none;}
+
+.primary_Button{
+    background-color: var(--pink500);
+    color: white;
+    font-weight: bold;
+    padding: 0 20px;
+    height: 40px;
+    border: none; outline: var(--pink600);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.primary_Button:hover{ background-color: var(--pink600);}
+
+.iconButton{
+    background: none; border: none;
+    display: flex; align-items: center; justify-content: center;
+    padding: 8px;
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
+    color: var(--pink500);
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.iconButton:hover{color: var(--pink600);}
+
+.section_title, .section_subtitle{color: var(--pink500);}
+
+.title_span, .section_subtitle{font-family: var(--secondFont); font-size: clamp(1.3rem, 1.5vw, 1.8rem);}
+
+header{
+    width: 100%; height: fit-content;
+    display: flex; align-items: center; justify-content: space-between;
+}
+
+
+
+/* header */
+.header_navDesktop{
+    width: 100%; height: 100%;
+    display: flex; align-items: center; 
+}
+
+.main_menu{
+    display: flex; align-items: center; justify-content: center;
+    gap: 2rem; margin-left: 8rem;
+    width: 100%;
+}
+
+.buttons_group{
+    display: flex; align-items: center; justify-content: space-between;
+    margin-left: 2rem; gap: 2rem;
+    place-self: end; 
+}
+
+.menu_link{
+    color: black;
+    transition: color .3s ease;
+}
+
+.menu_link:hover{ color: var(--pink500); }
+
+
+/* hero */
+.section_hero{
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.section_hero img{
+    width: 100%;
+}
+
+
+/* about */ 
+.section_about{
+    width: 100%; 
+    display: flex;
+    align-items: stretch;
+    height: min-content;
+}
+
+.about_aside, .about_aside img{
+    width: 60%; height: 50%;
+}
+
+.section_main{
+    display: flex; flex-direction: column;
+    height: 100%; width: 100%;
+}
+
+.section_p{margin: 2rem 0;}
+.sectionAbout_buttons{display: flex; align-items: center; justify-content: center; gap: 2rem;}
+
+
+/* services */
+.section_services{
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    width: 100%;
+}
+
+.servicesCards_container{
+    display: flex;align-items: stretch; justify-content: center;
+    gap: 2rem; width: 100%;
+    margin: 2rem 0;
+}
+
+.serviceCard_container{
+    width: 300px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: space-between; text-align: center;
+    overflow: hidden;
+    border-radius: 30px;
+    gap: 1rem;
+    background-color: var(--pink500); 
+    color: white;
+}
+
+
+.service_img{width: 300px; height: auto;}
+
+.service_description{padding: 0 1rem;}
+
+.button_bookForm{
+    color: var(--pink600); background-color: white; margin-bottom: 1rem;
+}
+
+
+/* gallery */
+.section_gallery{
+    background-color: var(--pink500); color: white;
+    display: flex; align-items: center; gap: 2.5rem;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.gallerytitle{ color: white;}
+
+.gallery_container{width: 100%; display: flex; align-items: center; justify-content: space-between;}
+
+
+/* form */
+.section_booking{
+    display: flex; align-items: center; justify-content: space-between;
+    width: 100%;
+}
+
+.booking_aside{width: 40%;
+}
+
+.form_container{
+    display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+    gap: 1rem;
+    width: 50%;
+}
+
+.form_container label{
+    display: flex; flex-direction: column;
+    align-items: start;
+    width: 100%; 
+    gap: .5rem;
+}
+
+.form_container input, .serviceSelect{
+    padding: .25rem; width: 100%; border-radius: 10px; 
+    border: 1.5px solid var(--pink500); outline-color: var(--pink600);
+    box-shadow: none;
+}
+
+.data_section{
+    display: flex; flex-direction: column; width: 100%;
+    gap: .25rem;
+}
+
+.inputs_data{
+    display: flex; align-items: center; justify-content: center;
+    width: 100%; gap: 2rem;
+}
+
+/* testimonials */
+.section_testimonials{
+    display: flex; flex-direction: column; 
+    align-items: center; justify-content: space-between;
+    width: 100%;
+}
+
+.testimonials_container{
+    margin-top: 2rem;
+    display: flex; align-items: stretch; justify-content: space-between;
+    gap: 2rem;
+}
+
+.testimonial_card{
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 1.5rem;
+    gap: 1rem; max-width: 350px;
+    background-color: var(--pink500); color: white;
+    border-radius: 30px;
+    position: relative;
+}
+
+.bi-quote{
+    position: absolute;
+    top: -1rem; left: -1rem;
+    font-size: 3rem;
+    color: var(--pink600);
+    opacity: .7;
+}
+
+
+/* footer */ 
+.footer_site{
+    display: flex; flex-direction: column; 
+    align-items: center; justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    background-color: var(--pink400);
+}
+
+.footer_header{
+    padding: 1rem;
+    width: 100%; justify-content: center;
+}
+
+.button_secondary{
+    background-color: white;
+    border: 1.5px solid var(--pink500);
+    color: var(--pink500);
+    border-radius: 40px;
+    height: 40px; padding: 0 16px;
+    display: flex; align-items: center; justify-content: center;
+    gap: 1rem;
+    transition: all .3s ease;
+}
+
+.button_secondary:hover{
+    background-color: var(--pink500); 
+    color: white;
+    border-color: var(--pink500);
+}
+
+.footer_main{
+    display: flex; align-items: start; justify-content: space-between;
+    width: 100%;
+    height: min-content;
+}
+
+.footer_buttons{ display: flex; width: 100%; justify-content: center; gap: 1.5rem;}
+
+.social_button{
+    background: none; border: none;
+    font-size: 2rem;
+    color: var(--pink500);
+    padding: .5rem;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.social_button:hover{
+    color: var(--pink600);
+}
+
+.footer_main iframe{
+    height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
